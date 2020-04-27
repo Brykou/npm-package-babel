@@ -1,8 +1,8 @@
 ## How to use
 
-Click on `Use this template`.
-Replace the placeholder components (`Button` and `Title`) by your own components.
-Run `npm run build`
+- Click on `Use this template`.
+- Replace the placeholder components (`Button` and `Title`) by your own components.
+- Run `npm run build`
 
 If you want to create a JS lib without React :
 
