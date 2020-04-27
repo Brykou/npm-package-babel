@@ -1,24 +1,28 @@
 {
   "name": "npm-package-babel",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Template for building a React component lib compiled with Babel",
   "main": "build/index.js",
   "scripts": {
     "build": "babel ./src --out-dir ./build -s inline",
-    "cp": "npm pack && cp npm-package-babel-1.0.0.tgz ~/packages",
-    "prepublishOnly": "babel ./src --out-dir ./build -s inline"
+    "pack": "npm pack",
+    "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "author": "Brykou",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brykou/npm-package-babel.git"
+  },
   "license": "ISC",
   "devDependencies": {
-    "react": "^16.9.0",
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "react": "^16.13.1"
   },
   "peerDependencies": {
-    "react": "^16.9.0"
+    "react": "^16.13.1"
   },
   "files": [
     "dist/*"
