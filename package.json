@@ -1,0 +1,26 @@
+{
+  "name": "npm-package-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./build -s inline",
+    "cp": "npm pack && cp npm-package-babel-1.0.0.tgz ~/packages",
+    "prepublishOnly": "babel ./src --out-dir ./build -s inline"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.9.0",
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
