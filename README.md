@@ -1,10 +1,11 @@
 ## How to use
 
 - Click on `Use this template`.
-- Replace the placeholder components (`Button` and `Title`) by your own components.
-- Run `npm run build`
+- Replace the `hello` function by your code.
+- Run `yarn build`
 
-If you want to create a JS lib without React :
+If you want to create a React JS lib :
 
-- Remove `React` from package.json.
-- Remove `@babel/preset-react` from package.json and babel.config.js
+- Add `React` as a dev and peer deps.
+- Add `@babel/preset-react` as a devDeps.
+- Add `eslint-plugin-react` as a devDeps.
